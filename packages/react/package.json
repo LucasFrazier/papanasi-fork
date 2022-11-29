@@ -1,9 +1,9 @@
 {
-  "name": "@papanasi/react",
-  "version": "1.0.0",
+  "name": "@lucasfrazier/papanasi-react",
+  "version": "1.0.5",
   "license": "MIT",
-  "author": "ckgrafico/papanasi",
-  "description": "Papanasi React UI Library",
+  "author": "Lucas Frazier",
+  "description": "Fork of Papanasi React UI Library",
   "main": "./dist/papanasi-react.umd.js",
   "module": "./dist/papanasi-react.es.js",
   "types": "./dist/index.d.ts",

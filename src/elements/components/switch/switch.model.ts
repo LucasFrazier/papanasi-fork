@@ -1,9 +1,10 @@
 import type { BaseProps, BaseState, Dynamic, Intent, Variant } from '~/models';
 
-export type PillProps = {
+export type SwitchProps = {
   variant?: Dynamic<Variant>;
-  intent?: Dynamic<Intent>;
-  disabled?: boolean;
+  inputId: string;
+  onText: string;
+  offText: string;
 } & BaseProps; // Extending a type via intersection. See below for BaseProps
 
 // export type BaseProps = {
@@ -13,7 +14,7 @@ export type PillProps = {
 //   children?: Children;
 // };
 
-export type PillState = {
+export type SwitchState = {
   classes: { base: string };
 } & BaseState;
 

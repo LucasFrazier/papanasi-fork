@@ -8,6 +8,7 @@ export { default as Button } from './elements/components/button';
 export { default as Code } from './elements/components/code';
 export { default as Pill } from './elements/components/pill';
 export { default as Spinner } from './elements/components/spinner';
+export { default as Switch } from './elements/components/switch';
 export { default as Itchio } from './elements/enterprise/itchio';
 export { useTooltipExtension } from './elements/extensions/tooltip';
 export { default as Column } from './elements/layout/column';

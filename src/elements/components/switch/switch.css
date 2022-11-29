@@ -1,0 +1,107 @@
+@import '~/styles/build.css';
+
+/* .pa-switch {
+  --pa-switch-text-size: var(--pa-font-size-small);
+
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  font-size: var(--pa-switch-text-size);
+  padding: 0.2rem 0.45rem;
+  text-align: center;
+} */
+
+/* PG styles */
+
+.pg-switch {
+  color: #000000;
+  font-size: 1rem;
+  outline: 0;
+  margin-bottom: 1.25rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.pg-switch .pg-switch-input {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.pg-switch .pg-switch-paddle {
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.2rem;
+  padding: 0.4rem 5rem 0.4rem 0;
+  position: relative;
+  transition: all 0.25s ease-out;
+}
+
+.pg-switch .pg-switch-paddle::before {
+  background: #f2f2f2;
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 1rem;
+  left: 6rem;
+  top: 50%;
+  margin-top: -1rem;
+}
+
+.pg-switch .pg-switch-paddle::after {
+  position: absolute;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  border-radius: 100%;
+  background: #cccccc;
+  transition: all 0.25s ease-out;
+  content: '';
+  top: 50%;
+  margin-top: -1rem;
+  left: 6rem;
+}
+
+.pg-switch .pg-switch-paddle .pg-switch--active,
+.pg-switch .pg-switch-paddle .switch-inactive {
+  width: 6rem;
+}
+
+.pg-switch .pg-switch-paddle .pg-switch--active {
+  display: none;
+}
+
+.pg-switch .pg-switch-paddle .pg-switch--inactive {
+  width: 6rem;
+  color: #7f7f7f;
+  display: inline-block;
+}
+
+.pg-switch input:checked ~ .pg-switch-paddle:before {
+  background: rgba(0, 177, 64, 0.1);
+}
+
+.pg-switch input:checked ~ .pg-switch-paddle:after {
+  left: 8rem;
+  background-color: #00b140;
+}
+
+.pg-switch input:checked + label > .pg-switch--active {
+  display: inline-block;
+}
+
+.pg-switch input:checked + label > .pg-switch--inactive {
+  display: none;
+}

@@ -1,0 +1,133 @@
+import { Canvas, Meta, Story, ArgsTable } from '@storybook/addon-docs';
+import { Switch } from '../../../../packages/react/src';
+import { variants, Intent, intents } from '../../../models';
+import { Customization, Codesandbox } from '../../../../.storybook/components';
+
+<Meta
+  title="🧩Elements/Components/Switch"
+  component={Switch}
+  argTypes={{
+    intent: {
+      name: 'intent',
+      description: 'Specify a temporary intent for the switch',
+      table: {},
+      options: intents.map((x) => x.value),
+      control: { type: 'select' }
+    }
+  }}
+/>
+
+export const Template = (args) => (
+  <div>
+    {variants.map((variant) => (
+      <Switch key={variant.key} {...args} variant={variant.value}>
+        {variant.key}
+      </Switch>
+    ))}
+  </div>
+);
+
+# Switch
+
+Switches are used to indicate a temporary state or show higlighted values.
+There are 3 different variants `primary`, `secondary` and `tertiary` or the one you decide to create, but also other 4 intents `info`, `success`, `warning` and `error`.
+
+## Showcase
+
+<Canvas>
+  <Story name="Switch" args={{ intent: '' }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Customization
+
+<Customization
+  selector=".pa-switch"
+  css={`
+    --pa-color-basic-brightest: #ffffff;
+    --pa-color-basic-darkest: #101116;
+    --pa-color-primary-normal: #017aff;
+    --pa-color-secondary-normal: #6c47ff;
+    --pa-color-tertiary-normal: #f34971;
+    --pa-switch-radius: 10rem;
+    --pa-switch-font-weight: var(--pa-font-weight-medium);
+  `}
+/>
+
+### Properties
+
+<ArgsTable story="Switch" of={Switch} />
+
+## How to use this component
+
+### Angular
+
+<Codesandbox
+  components={['Switch']}
+  platform="angular"
+  code={`
+    <switch variant="primary">Primary</switch>`}
+/>
+
+### Preact
+
+<Codesandbox
+  components={['Switch']}
+  platform="preact"
+  code={`
+    <Switch variant="primary">Primary</Switch>`}
+/>
+
+### Qwik
+
+<Codesandbox
+  components={['Switch']}
+  platform="qwik"
+  code={`
+    <Switch variant="primary">Primary</Switch>`}
+/>
+
+### React
+
+<Codesandbox
+  components={['Switch']}
+  platform="react"
+  code={`
+    <Switch variant="primary">Primary</Switch>`}
+/>
+
+### Solid
+
+<Codesandbox
+  components={['Switch']}
+  platform="solid"
+  code={`
+    <Switch variant="primary">Primary</Switch>`}
+/>
+
+### Svelte
+
+<Codesandbox
+  components={['Switch']}
+  platform="svelte"
+  code={`
+    <Switch variant="primary">Primary</Switch>`}
+/>
+
+### Vue
+
+<Codesandbox
+  components={['Switch']}
+  platform="vue"
+  code={`
+    <Switch variant="primary">Primary</Switch>`}
+/>
+
+### Web Components
+
+<Codesandbox
+  components={['Switch']}
+  platform="webcomponents"
+  code={`<pa-switch variant="primary">Primary</pa-switch>`}
+/>
