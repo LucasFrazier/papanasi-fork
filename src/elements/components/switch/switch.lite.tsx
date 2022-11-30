@@ -19,11 +19,8 @@ export default function Switch(props: SwitchProps) {
   return (
     <Show when={state.loaded}>
       <div class={state.classes.base}>
-        <input class="pg-switch-input" id={props.inputId} type="checkbox" />
-        <label class="pg-switch-paddle" htmlFor={props.inputId}>
-          <span class="pg-switch--active">{props.onText}</span>
-          <span class="pg-switch--inactive">{props.offText}</span>
-        </label>
+        <input class="pa-switch-input" id={props.inputId} type="checkbox" />
+        {props.children}
       </div>
     </Show>
   );

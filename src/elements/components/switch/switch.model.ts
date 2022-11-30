@@ -5,6 +5,8 @@ export type SwitchProps = {
   inputId: string;
   onText: string;
   offText: string;
+  Root: any;
+  Trigger: any;
 } & BaseProps; // Extending a type via intersection. See below for BaseProps
 
 // export type BaseProps = {
