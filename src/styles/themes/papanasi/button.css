@@ -3,14 +3,13 @@
 .pa-button {
   @mixin shared-styles;
 
-  --pa-button-radius: var(--pa-border-radius-small);
-  --pa-button-border-width: var(--pa-border-width-small);
-  --pa-button-font-weight: var(--pa-font-weight-medium);
+  --pa-button-border-width: var(--pa-border-width-normal);
+  --pa-button-font-weight: var(--pa-font-weight-semibold);
   --pa-button-outline: var(--pa-outline-width);
 
   background-color: var(--pa-color-basic-brightest);
   border-color: var(--pa-color-basic-bright);
-  border-radius: var(--pa-button-radius);
+  border-radius: none;
   border-style: solid;
   border-width: var(--pa-button-border-width);
   color: var(--pa-color-basic-darker);
@@ -20,8 +19,7 @@
   transition-property: var(--pa-transition-colors);
 
   &:hover {
-    background-color: var(--pa-color-basic-brighter);
-    border-color: var(--pa-color-basic-normal);
+    opacity: 0.5;
   }
 
   &:active {
@@ -35,8 +33,7 @@
       color: var(--pa-color-basic-brightest);
 
       &:hover {
-        background-color: var(--pa-color-$(variant)-dark);
-        border-color: var(--pa-color-$(variant)-dark);
+        opacity: 0.5;
       }
 
       &:active {
@@ -47,12 +44,10 @@
     &--outline&--$(variant) {
       background-color: transparent;
       border-color: var(--pa-color-$(variant)-normal);
-      color: var(--pa-color-$(variant)-dark);
+      color: var(--pa-color-$(variant)-normal);
 
       &:hover {
-        background-color: var(--pa-color-$(variant)-brightest);
-        border-color: var(--pa-color-$(variant)-dark);
-        color: var(--pa-color-$(variant)-darker);
+        opacity: 0.5;
       }
     }
   }
@@ -64,8 +59,7 @@
       border-color: transparent;
 
       &:hover {
-        background-color: var(--pa-color-$(intent)-normal);
-        border-color: var(--pa-color-$(intent)-normal);
+        opacity: 0.5;
       }
 
       &:active {
@@ -79,9 +73,7 @@
       color: var(--pa-color-$(intent)-normal);
 
       &:hover {
-        background-color: var(--pa-color-$(intent)-brightest);
-        border-color: var(--pa-color-$(intent)-normal);
-        color: var(--pa-color-$(intent)-darker);
+        opacity: 0.5;
       }
     }
   }

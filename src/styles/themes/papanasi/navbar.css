@@ -1,0 +1,26 @@
+.pa-navbar__root--primary {
+  background-color: var(--pa-color-primary-normal);
+  color: var(--pa-color-primary-brightest);
+}
+
+.pa-navbar__root--secondary {
+  background-color: var(--pa-color-secondary-normal);
+  color: var(--pa-color-primary-darkest);
+}
+
+.pa-navbar__root--tertiary {
+  background-color: var(--pa-color-tertiary-normal);
+  color: var(--pa-color-primary-darkest);
+}
+
+.pa-navbar__root--primary .pa-navbar__item a {
+  color: var(--pa-color-primary-brightest);
+}
+
+.pa-navbar__root--secondary .pa-navbar__item a {
+  color: var(--pa-color-primary-darkest);
+}
+
+.pa-navbar__root--tertiary .pa-navbar__item a {
+  color: var(--pa-color-primary-darkest);
+}

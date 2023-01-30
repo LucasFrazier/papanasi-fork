@@ -1,0 +1,22 @@
+[role='switch'][aria-checked='true'] .switch.pa-switch__trigger--primary,
+[role='switch'][aria-checked='true'] .pa-switch__trigger--primary.thumb {
+  border-color: var(--pa-color-primary-normal);
+}
+[role='switch'][aria-checked='true'] .switch.pa-switch__trigger--secondary,
+[role='switch'][aria-checked='true'] .pa-switch__trigger--secondary.thumb {
+  border-color: var(--pa-color-secondary-normal);
+}
+[role='switch'][aria-checked='true'] .switch.pa-switch__trigger--tertiary,
+[role='switch'][aria-checked='true'] .pa-switch__trigger--tertiary.thumb {
+  border-color: var(--pa-color-tertiary-normal);
+}
+
+[role='switch'][aria-checked='true'] .pa-switch__trigger--primary.thumb {
+  background-color: var(--pa-color-primary-normal);
+}
+[role='switch'][aria-checked='true'] .pa-switch__trigger--secondary.thumb {
+  background-color: var(--pa-color-secondary-normal);
+}
+[role='switch'][aria-checked='true'] .pa-switch__trigger--tertiary.thumb {
+  background-color: var(--pa-color-tertiary-normal);
+}

@@ -1,0 +1,8 @@
+.pa-progress__root--bar {
+  display: block;
+  height: 1rem;
+  background-color: lightgray;
+  margin-bottom: 1.563rem;
+  position: relative;
+  font-size: 6px;
+}

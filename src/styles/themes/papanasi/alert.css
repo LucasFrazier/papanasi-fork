@@ -1,0 +1,12 @@
+/* Custom */
+.pa-alert__title--primary {
+  color: var(--pa-color-primary-normal);
+}
+
+.pa-alert__title--secondary {
+  color: var(--pa-color-secondary-normal);
+}
+
+.pa-alert__title--tertiary {
+  color: var(--pa-color-tertiary-normal);
+}

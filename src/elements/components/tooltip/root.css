@@ -1,0 +1,8 @@
+.pa-tooltip__root {
+  position: relative;
+  display: inline-block;
+}
+
+.pa-tooltip__root:hover .pa-tooltip__content {
+  visibility: visible;
+}

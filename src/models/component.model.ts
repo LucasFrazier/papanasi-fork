@@ -3,6 +3,7 @@ export type BaseProps = {
   class?: string; // Fallback className
   classList?: string; // Fallback class
   children?: Children;
+  rounded?: string;
 };
 
 export type BaseState = {

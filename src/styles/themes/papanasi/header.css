@@ -1,0 +1,32 @@
+.pa-header__root--primary {
+  background-color: var(--pa-color-primary-normal);
+  color: var(--pa-color-primary-brightest);
+}
+
+.pa-header__root--secondary {
+  background-color: var(--pa-color-secondary-normal);
+  color: var(--pa-color-primary-darkest);
+}
+
+.pa-header__root--tertiary {
+  background-color: var(--pa-color-tertiary-normal);
+  color: var(--pa-color-primary-darkest);
+}
+
+.pa-header__root--primary .pa-header__burger--icon,
+.pa-header__root--primary .pa-header__burger--icon:before,
+.pa-header__root--primary .pa-header__burger--icon:after {
+  background-color: var(--pa-color-primary-brightest);
+}
+
+.pa-header__root--secondary .pa-header__burger--icon,
+.pa-header__root--secondary .pa-header__burger--icon:before,
+.pa-header__root--secondary .pa-header__burger--icon:after {
+  background-color: var(--pa-color-primary-darkest);
+}
+
+.pa-header__root--tertiary .pa-header__burger--icon,
+.pa-header__root--tertiary .pa-header__burger--icon:before,
+.pa-header__root--tertiary .pa-header__burger--icon:after {
+  background-color: var(--pa-color-primary-darkest);
+}

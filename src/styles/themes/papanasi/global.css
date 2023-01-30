@@ -1,0 +1,11 @@
+.pa__border-radius--small {
+  border-radius: 0.5rem;
+}
+
+.pa__border-radius--medium {
+  border-radius: 1rem;
+}
+
+.pa__border-radius--large {
+  border-radius: 2rem;
+}

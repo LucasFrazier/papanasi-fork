@@ -1,0 +1,12 @@
+/* Custom */
+.pa-card__title--primary {
+  color: var(--pa-color-primary-normal);
+}
+
+.pa-card__title--secondary {
+  color: var(--pa-color-secondary-normal);
+}
+
+.pa-card__title--tertiary {
+  color: var(--pa-color-tertiary-normal);
+}

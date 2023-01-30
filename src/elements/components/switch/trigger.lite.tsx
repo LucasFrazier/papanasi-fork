@@ -1,8 +1,18 @@
-export default function Trigger(props) {
+import type { TriggerProps } from './trigger.model';
+import './trigger.css';
+
+export default function Trigger(props: TriggerProps) {
   return (
-    <label class="pa-switch-paddle" htmlFor={props.inputId}>
-      <span class="pa-switch--active">{props.onText}</span>
-      <span class="pa-switch--inactive">{props.offText}</span>
-    </label>
+    <span
+      class={`switch pa-switch__trigger ${props.rounded ? 'pa__border-radius--' + props.rounded : ''} ${
+        props.variant ? 'pa-switch__trigger--' + props.variant : ''
+      }`}
+    >
+      <span
+        class={`thumb ${props.rounded ? 'pa__border-radius--' + props.rounded : ''} ${
+          props.variant ? 'pa-switch__trigger--' + props.variant : ''
+        }`}
+      ></span>
+    </span>
   );
 }

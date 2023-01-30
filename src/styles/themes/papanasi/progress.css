@@ -1,0 +1,12 @@
+/* Custom */
+.pa-progress__indicator--primary {
+  background-color: var(--pa-color-primary-normal);
+}
+
+.pa-progress__indicator--secondary {
+  background-color: var(--pa-color-secondary-normal);
+}
+
+.pa-progress__indicator--tertiary {
+  background-color: var(--pa-color-tertiary-normal);
+}

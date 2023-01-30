@@ -1,30 +1,30 @@
 :root {
   /* Color Primary */
-  --pa-color-primary-brightest: #b9daff;
+  --pa-color-primary-brightest: #ffffff;
   --pa-color-primary-brighter: #a4cfff;
-  --pa-color-primary-bright: #53a5ff;
-  --pa-color-primary-normal: #017aff;
+  --pa-color-primary-bright: #00a3e0;
+  --pa-color-primary-normal: #003da5;
   --pa-color-primary-dark: #005fc8;
   --pa-color-primary-darker: #004590;
-  --pa-color-primary-darkest: #002a58;
+  --pa-color-primary-darkest: #000000;
 
   /* Color Secondary */
-  --pa-color-secondary-brightest: #eeeaff;
+  --pa-color-secondary-brightest: #ffffff;
   --pa-color-secondary-brighter: #cec1ff;
-  --pa-color-secondary-bright: #ad99ff;
-  --pa-color-secondary-normal: #6c47ff;
-  --pa-color-secondary-dark: #3f0fff;
+  --pa-color-secondary-bright: #a4cfff;
+  --pa-color-secondary-normal: #00a3e0;
+  --pa-color-secondary-dark: #003da5;
   --pa-color-secondary-darker: #2b00d6;
-  --pa-color-secondary-darkest: #20009e;
+  --pa-color-secondary-darkest: #000000;
 
   /* Color Tertiary */
-  --pa-color-tertiary-brightest: #fde2e8;
+  --pa-color-tertiary-brightest: #ffffff;
   --pa-color-tertiary-brighter: #fbbccb;
   --pa-color-tertiary-bright: #f896ad;
-  --pa-color-tertiary-normal: #f34971;
+  --pa-color-tertiary-normal: #fedb00;
   --pa-color-tertiary-dark: #f01448;
   --pa-color-tertiary-darker: #bf0d37;
-  --pa-color-tertiary-darkest: #8b0928;
+  --pa-color-tertiary-darkest: #000000;
 
   /* Font */
   --pa-font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;

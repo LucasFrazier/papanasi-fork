@@ -1,6 +1,6 @@
 {
   "name": "@lucasfrazier/papanasi-react",
-  "version": "1.0.8",
+  "version": "1.0.220",
   "license": "MIT",
   "author": "Lucas Frazier",
   "description": "Fork of Papanasi React UI Library",
@@ -25,8 +25,8 @@
     "ssr-window": "^4.0.2"
   },
   "peerDependencies": {
-    "react": "^16.8.0 || 17.x",
-    "react-dom": "^16.8.0 || 17.x"
+    "react": "^16.8.0 || 17.x || 18.x ",
+    "react-dom": "^16.8.0 || 17.x || 18.x"
   },
   "files": [
     "dist"

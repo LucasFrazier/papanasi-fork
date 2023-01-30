@@ -1,0 +1,14 @@
+.pa-fab__root--primary {
+  background-color: var(--pa-color-primary-normal);
+  color: var(--pa-color-primary-brightest);
+}
+
+.pa-fab__root--secondary {
+  background-color: var(--pa-color-secondary-normal);
+  color: var(--pa-color-primary-darkest);
+}
+
+.pa-fab__root--tertiary {
+  background-color: var(--pa-color-tertiary-normal);
+  color: var(--pa-color-primary-darkest);
+}

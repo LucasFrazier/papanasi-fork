@@ -1,0 +1,8 @@
+.pa-progress__indicator {
+  display: block;
+  background-color: darkgray;
+  height: 1rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

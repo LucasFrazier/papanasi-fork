@@ -1,7 +1,9 @@
 :root {
   /* Border */
   --pa-border-radius-small: 4px;
+  --pa-border-radius-normal: 40px;
   --pa-border-width-small: 1px;
+  --pa-border-width-normal: 2px;
 
   /* Breakpoints */
   --pa-breakpoint-xxs: 360px;
@@ -67,8 +69,9 @@
   --pa-font-size: 1rem;
   --pa-font-weight-normal: 400;
   --pa-font-weight-medium: 500;
-  --pa-font-weight-bold: 600;
-  --pa-font-weight-black: 700;
+  --pa-font-weight-semibold: 600;
+  --pa-font-weight-bold: 700;
+  --pa-font-weight-black: 900;
 
   /* Grid */
   --pa-grid-gutter: 0.15rem;

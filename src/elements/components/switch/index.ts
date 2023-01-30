@@ -1,4 +1,11 @@
-import Root from './switch.lite';
+import Root from './root.lite';
 import Trigger from './trigger.lite';
+import Label from './label.lite';
 
-export default { Root, Trigger };
+const Switch = {
+  Root: Root,
+  Trigger: Trigger,
+  Label: Label
+};
+
+export default Switch;

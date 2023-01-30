@@ -1,0 +1,16 @@
+.pa-footer__root--global {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-block-start: 0.125rem solid lightgray;
+  padding-inline: 2.5rem;
+  padding-block: 1.25rem;
+  gap: 1.25rem;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .pa-footer__root--global {
+    flex-direction: row;
+  }
+}

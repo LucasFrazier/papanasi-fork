@@ -1,0 +1,14 @@
+.pa-secondary-footer__root--primary {
+  background-color: var(--pa-color-primary-normal);
+  color: var(--pa-color-primary-brightest);
+}
+
+.pa-secondary-footer__root--secondary {
+  background-color: var(--pa-color-secondary-normal);
+  color: var(--pa-color-primary-darkest);
+}
+
+.pa-secondary-footer__root--tertiary {
+  background-color: var(--pa-color-tertiary-normal);
+  color: var(--pa-color-primary-darkest);
+}

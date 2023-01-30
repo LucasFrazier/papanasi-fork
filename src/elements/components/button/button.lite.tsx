@@ -1,7 +1,7 @@
 import { onMount, Show, useMetadata, useStore } from '@builder.io/mitosis';
-import './button.css';
 import type { ButtonProps, ButtonState } from './button.model';
 import { buttonService } from './button.service';
+import './button.css';
 
 useMetadata({ isAttachedToShadowDom: true });
 
@@ -16,6 +16,7 @@ export default function Button(props: ButtonProps) {
     state.classes = buttonService.getClasses(
       props.variant,
       props.outline,
+      props.rounded,
       props.intent,
       props.disabled,
       props.className
