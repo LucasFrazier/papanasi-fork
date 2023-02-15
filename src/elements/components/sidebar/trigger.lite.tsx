@@ -19,7 +19,12 @@ export default function Trigger(props: BaseProps) {
   });
 
   return (
-    <div class="pa-sidebar__trigger" onClick={() => state.toggleSidebar()}>
+    <div
+      tabIndex={0}
+      class="pa-sidebar__trigger"
+      onClick={() => state.toggleSidebar()}
+      onKeyDown={(event) => event.key === 'Enter' && state.toggleSidebar()}
+    >
       {props.children}
     </div>
   );
