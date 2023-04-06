@@ -25,7 +25,9 @@ export default function Button(props: ButtonProps) {
 
   return (
     <Show when={state.loaded}>
-      <button class={state.classes.base}>{props.children}</button>
+      <button class={state.classes.base} form={props.form} type={props.type}>
+        {props.children}
+      </button>
     </Show>
   );
 }

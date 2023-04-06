@@ -5,6 +5,8 @@ export type ButtonProps = {
   intent?: Dynamic<Intent>;
   outline?: boolean;
   disabled?: boolean;
+  form?: string;
+  type?: 'submit' | 'reset' | 'button';
 } & BaseProps;
 
 export type ButtonState = {

@@ -38,7 +38,12 @@ export default function Root(props: RootProps) {
 
   return (
     <Show when={state.loaded}>
-      <div class="pa-alert__root" onClick={(event) => state.handleClick(event)}>
+      <div
+        class="pa-alert__root"
+        tabIndex={0}
+        onClick={(event) => state.handleClick(event)}
+        onKeyDown={(event) => event.key === 'Enter' && state.handleClick(event)}
+      >
         {state.trigger}
         <div style={{ display: `${state.alertActive ? 'block' : 'none'}` }}>{state.content}</div>
         <div style={{ display: `${state.alertActive ? 'block' : 'none'}` }} onClick={() => (state.alertActive = false)}>

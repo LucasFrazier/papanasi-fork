@@ -18,7 +18,7 @@ export default function Title(props: TitleProps) {
 
   return (
     <Show when={state.loaded}>
-      <h5 class={state.classes.base}>{props.children}</h5>
+      <div class={state.classes.base}>{props.children}</div>
     </Show>
   );
 }

@@ -6,7 +6,7 @@ export type RootProps = {
 
 export type RootState = {
   alertActive: boolean;
-  handleClick: (event: MouseEvent) => void;
+  handleClick: (event: MouseEvent | KeyboardEvent) => void;
   trigger: [];
   content: [];
   overlay: [];
