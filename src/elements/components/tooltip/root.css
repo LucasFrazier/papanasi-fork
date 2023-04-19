@@ -3,6 +3,7 @@
   display: inline-block;
 }
 
-.pa-tooltip__root:hover .pa-tooltip__content {
+.pa-tooltip__root:hover .pa-tooltip__content,
+.pa-tooltip__root:focus .pa-tooltip__content {
   visibility: visible;
 }
