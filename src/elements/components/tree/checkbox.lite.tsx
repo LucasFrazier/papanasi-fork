@@ -10,7 +10,7 @@ export default function Checkbox(props: CheckboxProps) {
     loaded: false,
     classes: { base: '' },
     handleCheckboxCheck(event) {
-      const inputs = event.target.parentElement.nextElementSibling.querySelectorAll('input');
+      const inputs = event.target.parentElement.parentElement.querySelectorAll('input');
 
       if (event.target.checked) {
         inputs.forEach((input) => (input.checked = true));

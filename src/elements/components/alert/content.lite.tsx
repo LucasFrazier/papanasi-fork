@@ -21,14 +21,14 @@ export default function Content(props: ContentProps) {
     <Show when={state.loaded}>
       <div class={state.classes.base}>
         {props.children}
-        <button
+        <div
+          tabIndex={0}
           class="pa-alert__content--close"
-          role="button"
           aria-label="close modal"
           onClick={(event) => pauseVideo(event)}
         >
           x
-        </button>
+        </div>
       </div>
     </Show>
   );
