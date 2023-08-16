@@ -8,7 +8,7 @@ export default function Root(props: RootProps) {
   const state = useStore<RootState>({
     loaded: false,
     alertActive: false,
-    handleClick(event) {
+    handleClick(event: MouseEvent | KeyboardEvent) {
       if ((event.target as Element).parentElement.classList.contains('pa-alert__trigger')) {
         state.alertActive = !state.alertActive;
         if (state.alertActive) {
@@ -38,7 +38,12 @@ export default function Root(props: RootProps) {
 
   return (
     <Show when={state.loaded}>
-      <div class="pa-alert__root" onClick={(event) => state.handleClick(event)}>
+      <div
+        class="pa-alert__root"
+        onClick={(event) => state.handleClick(event)}
+        onKeyDown={(event) => event.key === 'Enter' && state.handleClick(event)}
+        tabIndex={-1}
+      >
         {state.trigger}
         <div style={{ display: `${state.alertActive ? 'block' : 'none'}` }}>{state.content}</div>
         <div style={{ display: `${state.alertActive ? 'block' : 'none'}` }} onClick={() => (state.alertActive = false)}>
