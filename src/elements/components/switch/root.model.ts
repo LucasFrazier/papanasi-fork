@@ -2,6 +2,7 @@ import type { BaseProps, BaseState } from '~/models';
 
 export type RootProps = {
   outline?: boolean;
+  on?: boolean;
 } & BaseProps;
 
 export type RootState = {

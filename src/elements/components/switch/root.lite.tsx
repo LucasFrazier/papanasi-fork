@@ -24,6 +24,7 @@ export default function Root(props: RootProps) {
   onMount(() => {
     state.loaded = true;
     state.classes = rootService.getClasses(props.rounded, props.className);
+    state.ariaChecked = props.on || false;
   });
 
   return (
