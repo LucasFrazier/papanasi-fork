@@ -1,7 +1,9 @@
 @import '~/styles/build.css';
 
 [role='switch'] {
-  margin: 2px;
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem;
   padding: 4px 4px 8px 8px;
   border: 0 solid #005a9c;
   width: 15em;
