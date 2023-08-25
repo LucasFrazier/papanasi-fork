@@ -1,0 +1,6 @@
+.pa-card__action-bar {
+  display: flex;
+  column-gap: 0.5rem;
+  z-index: 10;
+  align-items: center;
+}
