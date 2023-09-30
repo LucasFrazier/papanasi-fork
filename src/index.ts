@@ -18,6 +18,7 @@ export { default as Pill } from './elements/components/pill';
 export { default as Progress } from './elements/components/progress';
 export { default as SecondaryFooter } from './elements/components/secondary-footer';
 export { default as Sidebar } from './elements/components/sidebar';
+export { default as Slider } from './elements/components/slider';
 export { default as Spinner } from './elements/components/spinner';
 export { default as Switch } from './elements/components/switch';
 export { default as Tooltip } from './elements/components/tooltip';

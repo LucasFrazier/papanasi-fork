@@ -20,6 +20,7 @@
     }
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001523",
     "codejar": "^3.6.0",
     "copy-to-clipboard": "^3.3.2",
     "copyfiles": "^2.4.1",
