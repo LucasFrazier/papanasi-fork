@@ -19,7 +19,7 @@ export default function Root(props: RootProps) {
   return (
     <Show when={state.loaded}>
       <div class={state.classes.base}>
-        <div class="pa-footer__root--global">{props.children}</div>
+        <div class={state.classes.base}>{props.children}</div>
       </div>
     </Show>
   );

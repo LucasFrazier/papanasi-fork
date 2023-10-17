@@ -12,7 +12,6 @@ export { default as DatePicker } from './elements/components/datepicker';
 export { default as Fab } from './elements/components/fab';
 export { default as Footer } from './elements/components/footer';
 export { default as Header } from './elements/components/header';
-export { default as Icon } from './elements/components/icon';
 export { default as Navbar } from './elements/components/navbar';
 export { default as Pill } from './elements/components/pill';
 export { default as Progress } from './elements/components/progress';

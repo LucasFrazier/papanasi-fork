@@ -1,17 +1,14 @@
-.pa-footer__root--primary,
-.pa-footer__secondary--primary {
+.pa-footer__root--primary {
   background-color: var(--pa-color-primary-normal);
   color: var(--pa-color-primary-brightest);
 }
 
-.pa-footer__root--secondary,
-.pa-footer__secondary--secondary {
+.pa-footer__root--secondary {
   background-color: var(--pa-color-secondary-normal);
   color: var(--pa-color-primary-darkest);
 }
 
-.pa-footer__root--tertiary,
-.pa-footer__secondary--tertiary {
+.pa-footer__root--tertiary {
   background-color: var(--pa-color-tertiary-normal);
   color: var(--pa-color-primary-darkest);
 }
