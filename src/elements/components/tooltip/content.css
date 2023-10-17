@@ -8,26 +8,26 @@
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  top: -5px;
-  left: 110%;
+  top: -1.75rem;
+  left: 115%;
 }
 
 .pa-tooltip__content--left {
   left: unset;
-  right: 110%;
+  right: 120%;
+  top: -20%;
 }
 
 .pa-tooltip__content--top {
   top: unset;
   bottom: 150%;
-  left: 50%;
+  left: 35%;
   margin-left: -60px;
 }
 
 .pa-tooltip__content--bottom {
   top: 150%;
-  left: 50%;
-  margin-left: -60px;
+  left: -50%;
 }
 
 /* Tooltip on right / Arrow pointing left */
@@ -68,6 +68,6 @@
   top: unset;
   right: unset;
   bottom: 100%; /* At the top of the tooltip */
-  left: 50%;
+  left: 46%;
   border-color: transparent transparent black transparent;
 }

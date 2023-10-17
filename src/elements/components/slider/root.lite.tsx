@@ -18,7 +18,7 @@ export default function Root(props: RootProps) {
     setTimeout(() => {
       const slides = document.querySelectorAll(`.${props.id}-slide`);
       slides.forEach((slide, index) => index !== 0 && slide.classList.add('hidden'));
-    });
+    }, 125);
   });
 
   onUpdate(() => {
