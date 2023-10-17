@@ -15,6 +15,10 @@ export default function Root(props: RootProps) {
   onMount(() => {
     state.loaded = true;
     state.classes = rootService.getClasses(props.rounded, props.className);
+    setTimeout(() => {
+      const slides = document.querySelectorAll(`.${props.id}-slide`);
+      slides.forEach((slide, index) => index !== 0 && slide.classList.add('hidden'));
+    });
   });
 
   onUpdate(() => {

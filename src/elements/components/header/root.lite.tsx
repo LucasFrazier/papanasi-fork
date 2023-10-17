@@ -27,9 +27,11 @@ export default function Root(props: RootProps) {
     <Show when={state.loaded}>
       <header class={state.classes.base}>
         <div class="pa-header__root--top">
-          <div class="pa-header__burger" onClick={() => state.handleBurgerClick()}>
-            <span class="pa-header__burger--icon"></span>
-          </div>
+          {state.navbar.length && (
+            <div class="pa-header__burger" onClick={() => state.handleBurgerClick()}>
+              <span class="pa-header__burger--icon"></span>
+            </div>
+          )}
           {state.startMiddleEnd}
         </div>
         {state.navbar}

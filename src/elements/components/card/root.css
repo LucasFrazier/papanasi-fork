@@ -1,7 +1,7 @@
 @import '~/styles/build.css';
 
 .pa-card__root {
-  border: 1px solid #ccc;
-  max-width: 290px;
+  border: 0.125rem solid #949494;
+  width: 100%;
   padding: 1rem;
 }
